@@ -1,23 +1,27 @@
 package sum_number;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class baekjoon11720 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		br.readLine();	// N 은 쓸모가 없으므로 입력만 받는다.
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		String sNum = sc.next();
+		
+		char[] cNum = sNum.toCharArray();
 		
 		int sum = 0;
 		
-		for(byte value : br.readLine().getBytes()) {
-			sum += (value - '0');	// 또는 (a-48)
+		for(int i=0; i<cNum.length;i++) {
+			// 문자 '1'은 아스키코드가 49, '1' - 48 = 1.
+			// sum += cNum[i] - 48;
+			sum += cNum[i] - '0'; // cNum에 있는 char 값을 출력해서 아스키코드로 바꿔줌 
 		}
 		
-		System.out.print(sum);
+		System.out.println(sum);
 	}
 
 }
