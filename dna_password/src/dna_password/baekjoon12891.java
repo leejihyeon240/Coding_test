@@ -1,4 +1,5 @@
 // 슬라이딩 윈도우 알고리즘 : 2개의 포인터로 범위를 지정한 다음 범위를 유지한 채로 이동하며 문제를 해결한다. 
+// 결과는 제대로 나오는데 채점 오류...?
 
 package dna_password;
 
@@ -67,25 +68,28 @@ public class baekjoon12891 {
 		// TODO Auto-generated method stub
 		switch (c) {
 		case 'A':
-			if (myArr[0] == checkArr[0])
+			if (myArr[0] == checkArr[0]) {
 				checkSecret--;
-			myArr[0]++;
-
+				myArr[0]++;
+			}
 			break;
 		case 'C':
-			if (myArr[1] == checkArr[1])
+			if (myArr[1] == checkArr[1]) {
 				checkSecret--;
-			myArr[1]++;
+				myArr[1]++;
+			}
 			break;
 		case 'G':
-			if (myArr[2] == checkArr[2])
+			if (myArr[2] == checkArr[2]) {
 				checkSecret--;
-			myArr[2]++;
+				myArr[2]++;
+			}
 			break;
 		case 'T':
-			if (myArr[3] == checkArr[3])
+			if (myArr[3] == checkArr[3]) {
 				checkSecret--;
-			myArr[3]++;
+				myArr[3]++;
+			}
 			break;
 		}
 	}
@@ -94,23 +98,27 @@ public class baekjoon12891 {
 		switch (c) {
 		case 'A':
 			myArr[0]++;
-			if (myArr[0] == checkArr[0])
+			if (myArr[0] == checkArr[0]) {
 				checkSecret++;
+			}
 			break;
 		case 'C':
 			myArr[1]++;
-			if (myArr[1] == checkArr[1])
+			if (myArr[1] == checkArr[1]) {
 				checkSecret++;
+			}
 			break;
 		case 'G':
 			myArr[2]++;
-			if (myArr[2] == checkArr[2])
+			if (myArr[2] == checkArr[2]) {
 				checkSecret++;
+			}
 			break;
 		case 'T':
 			myArr[3]++;
-			if (myArr[3] == checkArr[3])
+			if (myArr[3] == checkArr[3]) {
 				checkSecret++;
+			}
 			break;
 		}
 	}
