@@ -37,3 +37,7 @@
 ### 메모
 - 슬라이딩 윈도우 알고리즘 : 2개의 포인터로 범위를 지정한 다음 범위를 유지한 채로 이동하며 문제를 해결한다. 
 - 출력 결과 예시랑 같은데, 백준 채점은 안 됨...
+
+![](https://velog.velcdn.com/images/leejihyeon240/post/66230fbe-ad63-4cdc-97e3-e47cafce09c6/image.png)
+![](https://velog.velcdn.com/images/leejihyeon240/post/7b4d4119-0114-4937-bbec-44991de498b6/image.png)
+![](https://velog.velcdn.com/images/leejihyeon240/post/6250928e-74be-44ff-8263-c277734a2030/image.png)
